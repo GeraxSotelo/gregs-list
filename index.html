@@ -32,26 +32,40 @@
                     </div>
                     <div class="form-group">
                         <label for="year">Year</label>
-                        <input type="number" name="year" class="form-control" placeholder="Enter Year...">
+                        <input type="year" name="year" class="form-control" placeholder="Enter Year...">
+                    </div>
+                    <div class="form-group">
+                        <label for="miles">Miles</label>
+                        <input type="number" name="miles" class="form-control" placeholder="Enter Miles...">
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>
-                        <input type="text" name="price" class="form-control" placeholder="Enter Price...">
+                        <input type="number" name="price" class="form-control" placeholder="Enter Price...">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </form>
             </div>
             <!-----------------SECTION HOUSES ----------------->
             <div class="col-4 border bg-warning rounded shadow-lg mt-3">
-                <form class="text-left p-3" onsubmit="app.carsController.addHouse(event)">
+                <form class="text-left p-3" onsubmit="app.housesController.addHouse(event)">
                     <h3 class="text-center">Houses</h3>
                     <div class="form-group">
+                        <label for="hometype">Home Type</label>
+                        <select name="hometype" class="form-control">
+                            <option value="House">House</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Townhouse">Townhouse</option>
+                            <option value="Studio">Studio</option>
+                            <option value="Apartment">Apartment</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="sqft">SQFT.</label>
-                        <input type="text" name="sqft" class="form-control" placeholder="Enter SQFT...">
+                        <input type="number" name="sqft" class="form-control" placeholder="Enter SQFT...">
                     </div>
                     <div class="form-group">
                         <label for="floors">Floors</label>
-                        <input type="text" name="floors" class="form-control" placeholder="Enter Floors...">
+                        <input type="number" name="floors" class="form-control" placeholder="Enter Floors...">
                     </div>
                     <div class="form-group">
                         <label for="bedrooms">Bedrooms</label>
@@ -59,14 +73,18 @@
                     </div>
                     <div class="form-group">
                         <label for="bathrooms">Bathrooms</label>
-                        <input type="text" name="bathrooms" class="form-control" placeholder="Enter Bathrooms...">
+                        <input type="number" name="bathrooms" class="form-control" placeholder="Enter Bathrooms...">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" name="price" class="form-control" placeholder="Enter Price...">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </form>
             </div>
             <!-----------------SECTION JOBS ----------------->
             <div class="col-4 border bg-success rounded shadow-lg mt-3">
-                <form class="text-left p-3" onsubmit="app.carsController.addJob()">
+                <form class="text-left p-3" onsubmit="app.jobsController.addJob()">
                     <h3 class="text-center">Jobs</h3>
                     <div class="form-group">
                         <label for="company">Company</label>
@@ -78,11 +96,11 @@
                     </div>
                     <div class="form-group">
                         <label for="location">Location</label>
-                        <input type="number" name="location" class="form-control" placeholder="Enter Location...">
+                        <input type="text" name="location" class="form-control" placeholder="Enter Location...">
                     </div>
                     <div class="form-group">
                         <label for="salary">Salary</label>
-                        <input type="text" name="salary" class="form-control" placeholder="Enter Salary...">
+                        <input type="number" name="salary" class="form-control" placeholder="Enter Salary...">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </form>

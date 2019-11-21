@@ -6,7 +6,9 @@ class App {
   valuesController = new ValuesController();
 
   carsController = new CarsController()
-  HousesController = new HousesController()
+  housesController = new HousesController()
+  jobsController = new JobsController()
+
 }
 
 window["app"] = new App();

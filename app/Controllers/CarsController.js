@@ -23,13 +23,14 @@ export default class CarsController {
       make: formData.make.value,
       model: formData.model.value,
       year: formData.year.value,
-      price: formData.price.value
+      price: formData.price.value,
+      miles: formData.miles.value
     }
 
     _carService.addCar(carData)
+
     _drawCars()
     formData.reset()
-    // console.log(event.target.make.value);
   }
 
   removeCar(carIndex) {
