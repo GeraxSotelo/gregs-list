@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body class=" text-center text-white">
+    <header class="container-fluid bg-dark h-25">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">Greg's List</div>
+        </div>
+    </header>
+    <main class="container-fluid h-75 bg-secondary">
+        <div class="row justify-content-center">
+            <!-----------------SECTION CARS ----------------->
+            <div class="col-4 border bg-info rounded shadow-lg mt-3">
+                <form class="text-left p-3" onsubmit="app.carsController.addCar(event)">
+                    <h3 class="text-center">Cars</h3>
+                    <div class="form-group">
+                        <label for="make">Make</label>
+                        <input type="text" name="make" class="form-control" placeholder="Enter Make...">
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" name="model" class="form-control" placeholder="Enter Model...">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" name="year" class="form-control" placeholder="Enter Year...">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" name="price" class="form-control" placeholder="Enter Price...">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+            <!-----------------SECTION HOUSES ----------------->
+            <div class="col-4 border bg-warning rounded shadow-lg mt-3">
+                <form class="text-left p-3" onsubmit="app.carsController.addHouse(event)">
+                    <h3 class="text-center">Houses</h3>
+                    <div class="form-group">
+                        <label for="sqft">SQFT.</label>
+                        <input type="text" name="sqft" class="form-control" placeholder="Enter SQFT...">
+                    </div>
+                    <div class="form-group">
+                        <label for="floors">Floors</label>
+                        <input type="text" name="floors" class="form-control" placeholder="Enter Floors...">
+                    </div>
+                    <div class="form-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <input type="number" name="bedrooms" class="form-control" placeholder="Enter Bedrooms...">
+                    </div>
+                    <div class="form-group">
+                        <label for="bathrooms">Bathrooms</label>
+                        <input type="text" name="bathrooms" class="form-control" placeholder="Enter Bathrooms...">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+            <!-----------------SECTION JOBS ----------------->
+            <div class="col-4 border bg-success rounded shadow-lg mt-3">
+                <form class="text-left p-3" onsubmit="app.carsController.addJob()">
+                    <h3 class="text-center">Jobs</h3>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" name="company" class="form-control" placeholder="Enter Company...">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position</label>
+                        <input type="text" name="position" class="form-control" placeholder="Enter Position...">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="number" name="location" class="form-control" placeholder="Enter Location...">
+                    </div>
+                    <div class="form-group">
+                        <label for="salary">Salary</label>
+                        <input type="text" name="salary" class="form-control" placeholder="Enter Salary...">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="cars" class="row bg-secondary justify-content-center">
+        </div>
+        <div id="houses" class="row bg-secondary justify-content-center">
+        </div>
+        <div id="jobs" class="row bg-secondary justify-content-center">
+        </div>
+
+    </main>
+
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
