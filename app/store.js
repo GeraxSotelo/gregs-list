@@ -6,10 +6,11 @@ let _state = {
   activeValue: new Value({ title: "something" }),
   /** @type {Value[]} */
   values: [],
-  cars: [new Car({ make: "Subaru", model: "Crosstrek", year: 2018, miles: 43, price: 27000 })],
-  houses: [new House({ hometype: "House", sqft: 2500, floors: 2, bedrooms: 4, bathrooms: 3, price: 200000 })]
+  // cars: [new Car({ make: "Subaru", model: "Crosstrek", year: 2018, miles: 43, price: 27000 })],
+  cars: [],
+  houses: [],
+  jobs: []
 };
-console.log(_state.cars)
 
 //NOTE You should not need to change the code from this point down
 

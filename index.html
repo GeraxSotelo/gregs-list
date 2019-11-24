@@ -11,15 +11,17 @@
 </head>
 
 <body class=" text-center text-white">
-    <header class="container-fluid bg-dark h-25">
+    <header class="container-fluid bg-dark">
         <div class="row h-100 align-items-center">
-            <div class="col-12">Greg's List</div>
+            <div class="col-12">
+                <h1>Greg's List</h1>
+            </div>
         </div>
     </header>
-    <main class="container-fluid h-75 bg-secondary">
+    <main class="container-fluid bg-secondary">
         <div class="row justify-content-center">
             <!-----------------SECTION CARS ----------------->
-            <div class="col-4 border bg-info rounded shadow-lg mt-3">
+            <div class="col-4 border bg-info rounded shadow-lg mt-3 mb-3">
                 <form class="text-left p-3" onsubmit="app.carsController.addCar(event)">
                     <h3 class="text-center">Cars</h3>
                     <div class="form-group">
@@ -46,7 +48,7 @@
                 </form>
             </div>
             <!-----------------SECTION HOUSES ----------------->
-            <div class="col-4 border bg-warning rounded shadow-lg mt-3">
+            <div class="col-4 border bg-warning rounded shadow-lg mt-3 mb-3">
                 <form class="text-left p-3" onsubmit="app.housesController.addHouse(event)">
                     <h3 class="text-center">Houses</h3>
                     <div class="form-group">
@@ -83,8 +85,8 @@
                 </form>
             </div>
             <!-----------------SECTION JOBS ----------------->
-            <div class="col-4 border bg-success rounded shadow-lg mt-3">
-                <form class="text-left p-3" onsubmit="app.jobsController.addJob()">
+            <div class="col-4 border bg-success rounded shadow-lg mt-3 mb-3">
+                <form class="text-left p-3" onsubmit="app.jobsController.addJob(event)">
                     <h3 class="text-center">Jobs</h3>
                     <div class="form-group">
                         <label for="company">Company</label>
@@ -115,6 +117,14 @@
         </div>
 
     </main>
+
+    <footer class="container-fluid bg-dark">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <p>Gerax Sotelo &copy;2019</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="app/main.js" type="module"></script>
